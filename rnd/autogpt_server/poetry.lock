@@ -383,7 +383,7 @@ tiktoken = ">=0.7.0,<1.0.0"
 toml = "^0.10.2"
 uvicorn = {version = ">=0.23.2,<1", extras = ["standard"]}
 watchdog = "4.0.0"
-webdriver-manager = "^4.0.1"
+webdriver-manager = "4.0.2"
 
 [package.extras]
 benchmark = ["agbenchmark"]
