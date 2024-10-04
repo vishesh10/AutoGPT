@@ -274,7 +274,6 @@ class Block(ABC, Generic[BlockSchemaInputType, BlockSchemaOutputType]):
         ):
             if "error" in output_name:
                 raise ValueError(output_data)
-            
             if error := self.output_schema.validate_field(output_name, output_data):
                 raise ValueError(f"Block produced an invalid output data: {error}")
             yield output_name, output_data
